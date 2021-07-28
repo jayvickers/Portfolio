@@ -1,42 +1,53 @@
 import * as React from "react"
-import { useState, useEffect } from 'react';
 import Typing from 'react-typing-animation';
-import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-// styles
-const Title = styled.h1`  
-  color: #333333;
-`;
+const Hello = ({isMobile}) => {
 
-const pageStyles = {
+
+const h1Styles = {
+    color: "#333333"
+};
+
+const h1Styles2 = {
+    color: "#333333",
+   // marginBlockEnd: isMobile ? "0" : "21.44px",
+    marginBlockStart: isMobile ? "0" : "21.44px"
+};
+
+const containerStyles = {
     display: "flex",
-    justifyContent: "center"
+    justifyContent: "center",
+    flexDirection: isMobile ? "column" : "row"
 };
-const pageStyles2 = {
-    width: "6rem"
+
+const typingStyles = {
+    width: isMobile ? "auto" : "6rem" ,
+    minHeight: isMobile ? "78.875px" : "auto"   
 };
-// markup
-const Hello = () => {
     
   return (
-      <div style={pageStyles} className="intro-container"> 
-        <div style={pageStyles2} >
+      <div style={containerStyles} className="intro-container"> 
+        <div style={typingStyles} >
             <Typing speed={65}>
                 <Typing.Delay ms={250} />
-                <Title>Hola</Title>
-                <Typing.Delay ms={600} />
+                <h1 style={h1Styles}>Hola</h1>
+                <Typing.Delay ms={700} />
                 <Typing.Backspace count={4} />       
                 <Typing.Delay ms={250} />
-                <Title>Ciao</Title>
+                <h1 style={h1Styles}>Ahoj</h1>
                 <Typing.Delay ms={500} />
                 <Typing.Backspace count={4} />
                 <Typing.Delay ms={250} />
-                <Title>Hello.</Title>
+                <h1 style={h1Styles}>Hello.</h1>
             </Typing>
-            </div>
-        <Title>I'm Jay Vickers</Title>
+        </div>
+        <h1 style={h1Styles2}>I'm Jay Vickers</h1>
     </div>
   )
 }
 
+Hello.propTypes = {
+    isMobile: PropTypes.bool
+};
 export default Hello
