@@ -24,7 +24,7 @@ const ListItem = styled.li`
 
 
 // markup
-const AboutMeList = ({ isMobile }) => {
+const AboutMeList = () => {
 
    
   
@@ -47,7 +47,7 @@ const AboutMeList = ({ isMobile }) => {
 }
 
 AboutMeList.propTypes = {
-    isMobile: PropTypes.bool
+   
 };
 
 export default AboutMeList

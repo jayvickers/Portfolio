@@ -74,16 +74,6 @@ h1,h3 {
 };
 
 .underline-title:hover {
-    color: #000;       
-      
+    color: #000;
 };
 
-span.highlight-frontend {
-    box-shadow: 0 10px 0 0 rgb(0 114 177 / 0%), inset 0 -0.125em rgb(0 114 177 / 20%);
-    padding: 0 2px 2px;
-    position: relative;
-    -webkit-transition-duration: .2s;
-    transition-duration: .2s;
-    -webkit-transition-property: box-shadow,color;
-    transition-property: box-shadow,color;
-}

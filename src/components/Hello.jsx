@@ -2,33 +2,11 @@ import * as React from "react"
 import Typing from 'react-typing-animation';
 import PropTypes from 'prop-types';
 
-const Hello = ({isMobile}) => {
-
-const h1Styles2 = {    
-    marginBlockStart: isMobile ? "0" : "0.67em"
-};
-
-const containerStyles = {
-    display: "flex",
-    justifyContent: "center",
-    flexDirection: isMobile ? "column" : "row",    
-    textAlign: isMobile ? "center" : "inherit"
-};
-
-const typingStyles = {
-    width: "9rem" ,
-    minHeight: isMobile ? "78.875px" : "auto",
-    margin: isMobile ? "auto" : "inherit"
-};
-
-const underline = {
-    width: isMobile ? "auto" : "9rem" ,
-    minHeight: isMobile ? "78.875px" : "auto"
-};
+const Hello = () => {
     
   return (
-      <div style={containerStyles} className="intro-container"> 
-        <div style={typingStyles} >
+      <div className="intro-container" className="intro-container"> 
+        <div className="intro-container__typing" >
             <Typing speed={65}>
                 <Typing.Delay ms={250} />
                 <h1>Hola</h1>
@@ -42,12 +20,12 @@ const underline = {
                 <h1 className="underline-title">Hello.</h1>
             </Typing>
         </div>
-        <h1 style={h1Styles2}>I'm Jay Vickers</h1>
+        <h1 className="intro-container__title">I'm Jay Vickers</h1>
     </div>
   )
 }
 
 Hello.propTypes = {
-    isMobile: PropTypes.bool
+    
 };
 export default Hello

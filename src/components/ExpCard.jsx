@@ -3,20 +3,17 @@ import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 
 const ExpCard = ({ bullets, title }) => {
-    const [linkedInHovering, setlinkedInHovering] = useState(false);
-    const [githubHovering, setGithubHovering] = useState(false);
+    
     const expCardWrapperStyles = {
         display: "flex",        
-        flexDirection: "column",
-        maxWidth: "350px",
+        flexDirection: "column",       
         backgroundColor: "#fbfbfb",
         borderRadius: "2px",
         boxShadow: "2px 3px 1px #eaeaea",
-        margin: "0 .5rem",
+        margin: "0 0.5rem 1rem 0.5rem",
         padding: "1rem",
-        flex: "1 1 250px",
-        maxWidth: "350px",
-        minWidth: "250px"
+        flex: "0 1 35%",        
+        minWidth: "300px"
     };   
 
     const cardListItemStyles = {
