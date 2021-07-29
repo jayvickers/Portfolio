@@ -104,7 +104,7 @@ const CardsWrapper = () => {
 
   const subHeading = {
     margin: '1rem 0 0.5rem',
-    fontSize: '14px',
+    fontSize: '16px',
     fontWeight: '500'
   }
 
