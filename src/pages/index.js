@@ -1,14 +1,10 @@
-import * as React from "react";
-import { useState } from 'react';
-import Hello from "../components/Hello";
-import CardsWrapper from "../components/CardsWrapper";
-import AboutMeList from "../components/AboutMeList";
-import Header from "../components/Header";
-import ExpCard from "../components/ExpCard";
-import { Helmet } from 'react-helmet';
-import styled from 'styled-components';
-import { useMediaQuery } from '../components/hooks/useMediaQuery';
-import { createGlobalStyle } from 'styled-components';
+import * as React from 'react'
+import Hello from '../components/Hello'
+import CardsWrapper from '../components/CardsWrapper'
+import AboutMeList from '../components/AboutMeList'
+import Header from '../components/Header'
+import { Helmet } from 'react-helmet'
+import styled, { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -127,13 +123,11 @@ h1,h3 {
 .intro-container__title {
   margin-block-start: 0.67em;
 }
-`;
-
-
+`
 
 const HoverLinkBlue = styled.a`
   margin-left: 4px;
-  box-shadow: 0 10px 0 0 rgb(0 114 177 / 0%), inset 0 -0.125em rgb(0 114 177 / 20%);
+  box-shadow: 0 10px 0 0 rgb(0 114 177 / 0%), inset 0 -0.125em rgb(0 114 177 / 100%);
   padding: 0 2px 2px;
   position: relative;
   transition-duration: .2s;
@@ -145,11 +139,11 @@ const HoverLinkBlue = styled.a`
     box-shadow: 0 0 2px rgb(0 114 177 / 75%), inset 0 -1.375em 0 rgb(0 114 177 / 75%);
     color: white;
   }
-`;
+`
 
 const HoverLinkOrange = styled.a`  
   margin-left: 4px;
-  box-shadow: 0 10px 0 0 rgb(241 80 47 / 0%), inset 0 -0.125em rgb(241 80 47 / 20%);
+  box-shadow: 0 10px 0 0 rgb(241 80 47 / 0%), inset 0 -0.125em rgb(241 80 47 / 100%);
   padding: 0 2px 2px;
   position: relative;
   transition-duration: .2s;
@@ -159,36 +153,31 @@ const HoverLinkOrange = styled.a`
     box-shadow: 0 0 2px rgb(241 80 47 / 75%), inset 0 -1.375em 0 rgb(241 80 47 / 75%);
     color: white;
   }
-`;
-
-
-
-
+`
 
 // markup
 const IndexPage = () => {
-
   const addInfoStyles = {
-    textAlign: "center",
-    margin: "3rem 0"
+    textAlign: 'center',
+    margin: '3rem 0'
   }
 
   return (
     <>
     <GlobalStyle/>
       <Helmet title="foo bar">
-        <script src="https://kit.fontawesome.com/504a442b12.js" crossorigin="anonymous"/>
+        <script src="https://kit.fontawesome.com/504a442b12.js" crossOrigin="anonymous"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet"/>
       </Helmet>
       <Header/>
-        <main className="portfolio-main">     
+        <main className="portfolio-main">
           <Hello/>
           <AboutMeList/>
-          <p style={addInfoStyles}>Lets collaborate. Find me on 
-          <HoverLinkBlue className="clean-link"  href="https://www.linkedin.com/in/jevengineering/">LinkedIn</HoverLinkBlue> and 
-          <HoverLinkOrange className="clean-link"  href="https://github.com/jayvickers">GitHub</HoverLinkOrange></p>          
+          <p style={addInfoStyles}>Lets collaborate. Find me on
+          <HoverLinkBlue className="clean-link" href="https://www.linkedin.com/in/jevengineering/">LinkedIn</HoverLinkBlue> and
+          <HoverLinkOrange className="clean-link" href="https://github.com/jayvickers">GitHub</HoverLinkOrange></p>
           <CardsWrapper/>
         </main>
     </>

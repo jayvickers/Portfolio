@@ -1,11 +1,10 @@
-import * as React from "react"
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import * as React from 'react'
+import styled from 'styled-components'
 
 const listStyles = {
-  display: "grid",
-  justifyContent: "center",
-  gridRowGap: ".5rem"
+  display: 'grid',
+  justifyContent: 'center',
+  gridRowGap: '.5rem'
 }
 
 const ListItem = styled.li`    
@@ -20,15 +19,11 @@ const ListItem = styled.li`
     &:hover {    
         box-shadow: 3px 4px 1px #d4d4d4;
     }
-`;
-
+`
 
 // markup
 const AboutMeList = () => {
-
-   
-  
-  return (  
+  return (
     <ul style={listStyles}>
         <ListItem>
             <i className="fas fa-cogs fa-sm"></i>
@@ -39,7 +34,7 @@ const AboutMeList = () => {
             <span>React Performance Guru</span>
         </ListItem>
         <ListItem>
-            <i className="fas fa-comments fa-sm"></i>        
+            <i className="fas fa-comments fa-sm"></i>
             <span>Polyglot in training</span>
         </ListItem>
     </ul>
@@ -47,7 +42,7 @@ const AboutMeList = () => {
 }
 
 AboutMeList.propTypes = {
-   
-};
+
+}
 
 export default AboutMeList
