@@ -5,7 +5,7 @@ import AboutMeList from '../components/AboutMeList'
 import Header from '../components/Header'
 import { Helmet } from 'react-helmet'
 import styled, { createGlobalStyle } from 'styled-components'
-import logo from '../images/bgsolid.png'
+import logo from '../images/bgsolid-min.png'
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -15,9 +15,7 @@ body {
 }
 
 html {
-  background-color: #fcf4f2;
-  background-image: url(${logo});
-  
+  background-image: url(${logo});  
 }
 
 ul {
@@ -80,9 +78,7 @@ h1,h3 {
   bottom: 0;
   left: 0;
   background-color: #000;
-  animation: 1s ease-out 0s 1 slideInFromLeft;
-      
-    
+  animation: 1s ease-out 0s 1 slideInFromLeft;    
 };
 
 .underline-title:hover {
@@ -117,7 +113,6 @@ h1,h3 {
 
 .portfolio-main {
   margin: 6rem 2rem;
-  background-image: url("../../images/testbg.png");
 }
 
 .intro-container {
@@ -147,7 +142,6 @@ h1,h3 {
   flex: 0 1 35%;
   min-width: 300px;
   cursor: default;
-  background-image: url("../images/testbg.png");
 }
 
 @keyframes testSize {
