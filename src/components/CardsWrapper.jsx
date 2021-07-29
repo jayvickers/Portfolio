@@ -115,7 +115,7 @@ const CardsWrapper = () => {
       <div style={legendContainer}>
         <p className="exp-card-wrapper__hidden-sub" style={subHeading}>(Hover any underlined element in the cards below to see relevant experience)</p>
       </div>
-      <ExpCard title="Healthgrades" bullets={hgExpBullets}/>
+      <ExpCard isCurrent title="Healthgrades" bullets={hgExpBullets}/>
       <ExpCard title="Envision Technology" bullets={envExpBullets}/>
       <ExpCard title="Encana Oil & Gas" bullets={encExpBullets}/>
       <ExpCard title="Current Side Projects" bullets={freeLanceBullets}/>

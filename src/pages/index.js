@@ -134,6 +134,7 @@ h1,h3 {
 }
 
 .exp-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #fbfbfb;

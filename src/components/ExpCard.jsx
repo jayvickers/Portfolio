@@ -21,18 +21,19 @@ const ExpCard = ({ bullets, isCurrent, title }) => {
   const FEStyles = {
     transitionDuration: '.2s',
     transitionProperty: 'box-shadow,color',
-    boxShadow: '0 0 2px rgb(99 183 183 / 75%), inset 0 -1.375em 0 rgb(99 183 183 / 100%)',
+    boxShadow: '0 0 2px rgb(241 80 47 / 75%), inset 0 -1.375em 0 rgb(241 80 47 / 100%)',
     padding: '0 2px 2px',
-    position: 'relative',
     borderRadius: '2px',
-    color: 'white'
+    color: 'white',
+    position: 'absolute',
+    right: '10px'
   }
 
   let count = 0
   const updateCnt = () => { count = count + 1 }
   return (
     <div className="exp-card">
-    <h3>{title}</h3>
+    <h3 style={{ textAlign: 'center' }}>{title}</h3>
     {!!isCurrent && <span style={FEStyles}>Current Role</span> }
         <ul style={listStyles}>
             {!!bullets && bullets.map((bullet) =>
@@ -53,7 +54,7 @@ ExpCard.propTypes = {
   title: PropTypes.string
 }
 
-Greeting.defaultProps = {
+ExpCard.defaultProps = {
   isCurrent: false
 }
 export default ExpCard
