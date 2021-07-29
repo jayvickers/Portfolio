@@ -16,8 +16,9 @@ const containerStyles = {
 };
 
 const typingStyles = {
-    width: isMobile ? "auto" : "9rem" ,
-    minHeight: isMobile ? "78.875px" : "auto"
+    width: "9rem" ,
+    minHeight: isMobile ? "78.875px" : "auto",
+    margin: isMobile ? "auto" : "inherit"
 };
 
 const underline = {

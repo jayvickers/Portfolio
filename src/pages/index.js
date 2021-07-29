@@ -37,22 +37,55 @@ const HoverLinkOrange = styled.a`
   }
 `;
 
+const FrontEndStyle = styled.span` 
+  border-radius: 2px;   
+  box-shadow: 0 0 2px rgb(99 183 183 / 50%), inset 0 -1.375em 0 rgb(99 183 183 / 100%);
+  color: white;
+  padding: 0 2px 2px;
+  position: relative;
+`;
+
+const BackEndStyle = styled.span` 
+  border-radius: 2px;   
+  box-shadow: 0 0 2px rgb(210 100 102 / 50%), inset 0 -1.375em 0 rgb(210 100 102 / 100%);
+  color: white;
+  padding: 0 2px 2px;
+  position: relative;
+`;
+
+const TestingStyle = styled.span` 
+  border-radius: 2px;   
+  box-shadow: 0 0 2px rgb(177 144 127 / 50%), inset 0 -1.375em 0 rgb(177 144 127 / 100%);
+  color: white;
+  padding: 0 2px 2px;
+  position: relative;
+`;
+
+const HighlightStyle = styled.span` 
+  border-radius: 2px;   
+  box-shadow: 0 0 2px rgb(204 163 14 / 50%), inset 0 -1.375em 0 rgb(204 163 14 / 100%);
+  color: white;
+  padding: 0 2px 2px;
+  position: relative;
+`;
+
 const hgExpBullets = [
-  'Build high-visibility front-end components in React.js and CSS to serve 30 million monthly views.',
-  'Create microservices in C#, Node.js, and AWS Lambda to serve content and handle requests.',
-  'Improve SEO rankings and Lighthouse/Google Analytics performance scores for high-value projects.'
+  <div>Build high-visibility front-end components in <FrontEndStyle>React.js</FrontEndStyle> and <HighlightStyle>CSS</HighlightStyle> to serve 30 million monthly views.</div>,
+  <div>Create microservices in <BackEndStyle>C#</BackEndStyle>, <BackEndStyle>Node.js</BackEndStyle>, and AWS Lambda to serve content and handle requests.</div>,
+  <div>Improve <HighlightStyle>SEO</HighlightStyle> rankings and Google Analytics performance scores for high-value projects.</div>,
+  <div>Build automated test suites in <TestingStyle>Jest</TestingStyle> and <TestingStyle>Selenium</TestingStyle> testing frameworks executed on GitLab CI.</div>,
 ];
 
 const envExpBullets = [
-  'Developed customer-specific modules using vanilla JavaScript, C# ASP.NET, and MVC architecture for a nationally-recognized immunization registry SaaS.',
-  'Engineered custom unit and integration tests executed in Jest and Selenium testing frameworks.',
-  'Wrote custom queries in TSQL and MySQL for large production databases.'
+  <div>Developed customer-specific modules using vanilla <FrontEndStyle>JavaScript</FrontEndStyle>, <BackEndStyle>C# ASP.NET</BackEndStyle>, and MVC architecture for a nationally-recognized immunization registry SaaS.</div>,
+  <div>Engineered custom unit and integration tests executed in <TestingStyle>NUnit</TestingStyle> and <TestingStyle>Selenium</TestingStyle> testing frameworks.</div>,
+  <div>Wrote custom queries in <BackEndStyle>TSQL</BackEndStyle> and <BackEndStyle>MySQL</BackEndStyle> for large production databases.</div>
 ];
 
 const encExpBullets = [
-  'Developed software to analyze network traffic and improve throughput to remote Modbus and PLC communication devices.',
-  'Created processes in C++ and Python to assist in automated oil and gas extraction.',
-  'Assisted in installation of remote-control system software in active Oil Rigs and refinery equipment in live-production environments.'
+  <div>Developed software to analyze network traffic and improve throughput to remote Modbus and PLC communication devices.</div>,
+  <div>Created processes in <BackEndStyle>C++</BackEndStyle> and <FrontEndStyle>Python</FrontEndStyle> to assist in automated oil and gas extraction.</div>,
+  <div>Assisted in installation of remote-control system software in active Oil Rigs and refinery equipment in live-production environments.</div>
 ];
 
 // markup
