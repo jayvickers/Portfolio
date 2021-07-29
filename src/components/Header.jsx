@@ -1,14 +1,8 @@
 import * as React from "react"
 import PropTypes from 'prop-types';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
-const Mailto = ({ email, subject, body, children }) => {
-    return (
-      <a href={`mailto:${email}?subject=${encodeURIComponent(subject) || ''}&body=${encodeURIComponent(body) || ''}`}>{children}</a>
-    );
-  };
-
-const Header = ({isMobile}) => {
+const Header = () => {
     const [linkedInHovering, setlinkedInHovering] = useState(false);
     const [githubHovering, setGithubHovering] = useState(false);
     const headerStyles = {
@@ -55,7 +49,4 @@ const Header = ({isMobile}) => {
   )
 }
 
-Header.propTypes = {
-    isMobile: PropTypes.bool
-};
 export default Header
