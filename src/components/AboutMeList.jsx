@@ -14,11 +14,11 @@ const ListItem = styled.li`
     grid-template-columns: 2rem auto;
     background-color: #fbfbfb;
     padding: .5rem;
-    border-radius: 20px;
+    border-radius: 2px;
     box-shadow: 2px 3px 1px #eaeaea;
 
     &:hover {    
-    box-shadow: 3px 4px 1px #d4d4d4;
+        box-shadow: 3px 4px 1px #d4d4d4;
     }
 `;
 
@@ -31,16 +31,16 @@ const AboutMeList = ({ isMobile }) => {
   return (  
     <ul style={listStyles}>
         <ListItem>
-        <i className="fas fa-cogs fa-sm"></i>
-        <span>Full Stack Software Engineer</span>
+            <i className="fas fa-cogs fa-sm"></i>
+            <span>Full Stack Software Engineer</span>
         </ListItem>
         <ListItem>
-        <i className="fas fa-tachometer-alt fa-sm"></i>
-        <span>React Performance Guru</span>
+            <i className="fas fa-tachometer-alt fa-sm"></i>
+            <span>React Performance Guru</span>
         </ListItem>
         <ListItem>
-        <i className="fas fa-comments fa-sm"></i>        
-        <span>Polyglot in training</span>
+            <i className="fas fa-comments fa-sm"></i>        
+            <span>Polyglot in training</span>
         </ListItem>
     </ul>
   )

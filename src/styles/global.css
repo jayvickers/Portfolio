@@ -6,15 +6,20 @@ body {
 
 html {
     background-color: #fcf4f2;
-  }
+}
 
-  ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
 
-  i.fas {
+i.fas, i.fab {
     display: flex;
     align-items: center;
-  }
+}
+
+a.clean-link{
+    text-decoration: none;
+    color: currentColor;
+}
