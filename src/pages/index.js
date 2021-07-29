@@ -5,9 +5,11 @@ import AboutMeList from '../components/AboutMeList'
 import Header from '../components/Header'
 import { Helmet } from 'react-helmet'
 import styled, { createGlobalStyle } from 'styled-components'
-import logo from '../images/bgsolid-min.png'
+import logo from '../images/bgsolid-min-web.webp'
+import '../styles/fonts.css'
 
 const GlobalStyle = createGlobalStyle`
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -175,6 +177,8 @@ div.exp-card:hover i {
 i {
   transition: all 150ms ease-in-out, color 150ms ease-in-out;
 }
+
+
 `
 
 const HoverLinkBlue = styled.a`
@@ -220,9 +224,6 @@ const IndexPage = () => {
       <Helmet title="Jay Vickers, Software Engineer">
         <meta name="description" content="Jay Vickers resume" />
         <script src="https://kit.fontawesome.com/504a442b12.js" crossOrigin="anonymous"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet"/>
       </Helmet>
       <Header/>
         <main className="portfolio-main">
