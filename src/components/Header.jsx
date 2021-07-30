@@ -10,7 +10,7 @@ const Header = () => {
     flexDirection: 'row',
     width: '100%',
     height: '3rem',
-    backgroundColor: '#fbfbfb',
+    backgroundColor: '#E0F1F1',
     boxShadow: '0px 1px 5px #eaeaea',
     position: 'absolute',
     top: '0'

@@ -136,9 +136,9 @@ h1,h3 {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #fbfbfb;
+  background-color: #E0F1F1;
   border-radius: 2px;
-  box-shadow: 2px 3px 1px #eaeaea;
+  box-shadow: 2px 3px 1px #E0F1F1;
   margin: 0 0.5rem 1rem 0.5rem;
   padding: 1rem;
   flex: 0 1 35%;

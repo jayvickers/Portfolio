@@ -11,7 +11,7 @@ const ListItem = styled.li`
     cursor: default;
     display: grid;
     grid-template-columns: 2rem auto;
-    background-color: #fbfbfb;
+    background-color: #E0F1F1;
     padding: .5rem;
     border-radius: 2px;
     box-shadow: 2px 3px 1px #eaeaea;
