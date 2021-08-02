@@ -15,9 +15,7 @@ body {
   transition: all 150ms ease-in-out, color 150ms ease-in-out;
 }
 
-html {
-  background-image: url(${logo});  
-}
+
 
 ul {
   list-style-type: none;
