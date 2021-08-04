@@ -33,17 +33,17 @@ const ExpCard = ({ bullets, isCurrent, title }) => {
   const updateCnt = () => { count = count + 1 }
   return (
     <div className="exp-card">
-    <h3 style={{ textAlign: 'center' }}>{title}</h3>
-    {!!isCurrent && <span style={FEStyles}>Current Role</span> }
-        <ul style={listStyles}>
-            {!!bullets && bullets.map((bullet) =>
-                <li style={cardListItemStyles} key={count}>
-                    {updateCnt()}
-                    <i style={cardIconStyles} className="fas fa-arrow-right fa-xs"/>
-                    {bullet}
-                </li>
-            )}
-        </ul>
+      <h3 style={{ textAlign: 'center' }}>{title}</h3>
+      {!!isCurrent && <span style={FEStyles}>Current Role</span>}
+      <ul style={listStyles}>
+        {!!bullets && bullets.map((bullet) =>
+          <li style={cardListItemStyles} key={count}>
+            {updateCnt()}
+            <i style={cardIconStyles} className="fas fa-arrow-right fa-xs" />
+            {bullet}
+          </li>
+        )}
+      </ul>
     </div>
   )
 }

@@ -86,8 +86,11 @@ h1,h3 {
 };
 
 @media only screen and (max-width: 500px) {
-  main.portfolio-main {
-      margin: 3rem 1rem 0 !important;
+  div.about-wrapper {
+    margin: 3rem 1rem 0 !important;
+  }
+  div.exp-card-wrapper {
+    padding: 3rem 1rem 0 !important;
   }
   div.intro-container {    
     flex-direction: column;    
@@ -110,8 +113,12 @@ h1,h3 {
   }
 }
 
-.portfolio-main {
-  margin: 6rem 2rem;
+div.about-wrapper {
+  margin: 6rem 2rem 8rem 2rem;
+}
+
+div.exp-card-wrapper {
+  padding: 6rem 2rem;
 }
 
 .intro-container {
@@ -136,7 +143,7 @@ h1,h3 {
   flex-direction: column;
   background-color: #E0F1F1;
   border-radius: 2px;
-  box-shadow: 2px 2px 1px #d4d4d4;
+  box-shadow: 2px 2px 2px #383532;
   margin: 0 0.5rem 1rem 0.5rem;
   padding: 1rem;
   flex: 0 1 35%;
@@ -159,7 +166,7 @@ h1,h3 {
 
 
 div.exp-card:hover {
-  box-shadow: 3px 4px 2px #868686;
+  box-shadow: 3px 4px 3px #2D2A28;
 }
 
 div.exp-card li:nth-of-type(1) i { animation-delay: .1s; }
@@ -228,11 +235,19 @@ const IndexPage = () => {
       </Helmet>
       <Header/>
         <main className="portfolio-main">
-          <Hello/>
-          <AboutMeList/>
-          <p style={addInfoStyles}>7 years of full-stack experience, 5 years serving React components to millions of end-users. Lets collaborate, Find me on
-          <HoverLinkBlue className="clean-link" href="https://www.linkedin.com/in/jevengineering/">LinkedIn</HoverLinkBlue> and
-          <HoverLinkOrange className="clean-link" href="https://github.com/jayvickers">GitHub</HoverLinkOrange></p>
+          <div className="about-wrapper">
+            <Hello/>
+            <AboutMeList/>
+            <p style={addInfoStyles}>7 years of full-stack experience, 5 years serving React components to millions of end-users. Lets collaborate, Find me on
+              <HoverLinkBlue className="clean-link" href="https://www.linkedin.com/in/jevengineering/">LinkedIn</HoverLinkBlue> and
+              <HoverLinkOrange className="clean-link" href="https://github.com/jayvickers">GitHub</HoverLinkOrange>
+            </p>
+          </div>
+          <div className="svg_divider">
+              <svg style={{ fill: '#6363b7', marginBottom: '-4px' }} x="0px" y="0px" viewBox="0 186.5 1920 113.5">
+                  <polygon points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 "></polygon>
+              </svg>
+            </div>
           <CardsWrapper/>
         </main>
     </>
