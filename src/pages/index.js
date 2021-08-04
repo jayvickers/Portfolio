@@ -136,7 +136,7 @@ h1,h3 {
   flex-direction: column;
   background-color: #E0F1F1;
   border-radius: 2px;
-  box-shadow: 2px 3px 1px #E0F1F1;
+  box-shadow: 2px 2px 1px #d4d4d4;
   margin: 0 0.5rem 1rem 0.5rem;
   padding: 1rem;
   flex: 0 1 35%;
@@ -159,7 +159,7 @@ h1,h3 {
 
 
 div.exp-card:hover {
-  box-shadow: 3px 4px 2px #d4d4d4;
+  box-shadow: 3px 4px 2px #868686;
 }
 
 div.exp-card li:nth-of-type(1) i { animation-delay: .1s; }

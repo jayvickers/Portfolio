@@ -14,10 +14,10 @@ const ListItem = styled.li`
     background-color: #E0F1F1;
     padding: .5rem;
     border-radius: 2px;
-    box-shadow: 2px 3px 1px #eaeaea;
+    box-shadow: 2px 2px 1px #d4d4d4;
 
     &:hover {    
-        box-shadow: 3px 4px 1px #d4d4d4;
+        box-shadow: 3px 4px 1px #868686;
     }
 `
 
